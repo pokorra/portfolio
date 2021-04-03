@@ -1,0 +1,82 @@
+.detail {
+  display: none;
+  margin-bottom: 15px;
+  border-radius: 0 0 20px 20px;
+  background-color: $whitesmoke;
+  color: $black;
+  max-height: 0;
+}
+.detail--roll {
+  display: flex;
+  animation: shrink 0.5s linear forwards;
+}
+.detail--unroll {
+  margin-top: 0px;
+  @include centerflex;
+  flex-direction: column;
+  animation-delay: 1s;
+  animation: 0.5s grow linear forwards;
+  max-height: 0;
+}
+
+.detail__inner {
+  visibility: visible;
+  opacity: 0;
+  animation: showme 1s forwards;
+}
+.detail__inner--invisible {
+  visibility: hidden;
+}
+.detail__closing-btn {
+  margin: 3px;
+  padding: 5px;
+  font-size: 20px;
+  background-color: $black;
+  color: $whitesmoke;
+  display: inherit;
+  cursor: pointer;
+  svg {
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .detail__closing-btn {
+    padding: 3px;
+    font-size: 16px;
+  }
+}
+
+@keyframes showme {
+  0% {
+    opacity: 0;
+    display: none;
+  }
+  50% {
+    opacity: 0;
+    display: flex;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes grow {
+  from {
+    max-height: 0;
+  }
+  to {
+    max-height: 200vh;
+    height: auto;
+  }
+}
+@keyframes shrink {
+  from {
+    height: auto;
+    max-height: 200vh;
+  }
+  to {
+    max-height: 0;
+    display: none;
+  }
+}

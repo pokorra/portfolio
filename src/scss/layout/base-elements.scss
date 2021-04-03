@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+body {
+  background-color: $black;
+  color: $whitesmoke;
+  margin: 20px;
+  font-family: $primary-font;
+}
+
+h1 {
+  font-family: $big-font;
+}
+
+h2,
+h3,
+h4 {
+  font-family: $headers-font;
+}
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  display: inherit;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.hidden {
+  display: none;
+}

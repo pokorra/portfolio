@@ -1,0 +1,146 @@
+.detail2__title {
+  font-size: 25px;
+}
+@media only screen and (max-width: 650px) {
+  .detail2__title {
+    font-size: 5vw;
+    text-align: center;
+  }
+}
+//TECHNOLGIES
+.technologies {
+  width: 70%;
+  .technologies__list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+  }
+}
+.technologies__list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 140px;
+  min-width: 120px;
+  padding: 5px;
+  margin: 10px;
+}
+.technologies__list-item-name {
+  bottom: 20px;
+  margin-top: 5px;
+  font-size: 20px;
+  word-wrap: wrap;
+}
+
+@media only screen and (max-width: 650px) {
+  .technologies__list-item {
+    min-width: 110px;
+    margin: 5px;
+  }
+  .technologies__list-item-name {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .technologies__list-item {
+    min-width: 100px;
+    margin: 0px;
+  }
+  .technologies__list-item-name {
+    font-size: 14px;
+    max-width: 100px;
+    text-align: center;
+  }
+}
+//SOFT SKILLS SECTION
+.slider__provider {
+  margin: 20px 20px 40px;
+  width: 40vw;
+  padding: 0;
+}
+.slider-item__title {
+  font-size: 23px;
+}
+.slider-item__text {
+  font-size: 18px;
+  text-align: justify;
+}
+.slider__dots {
+  display: flex;
+  justify-content: center;
+  height: 20px;
+  padding: 5px;
+}
+.slider__dot {
+  margin: 0 10px;
+  font-size: 30px;
+  color: $lightgreyish;
+  &:disabled,
+  &[disabled] {
+    color: $darkgreyish;
+    transform: scale(1.1);
+  }
+}
+.slider__arrows {
+  display: flex;
+  justify-content: space-between;
+  margin: -2vh 2vw 3vh;
+}
+.slider__arrow {
+  font-size: 40px;
+  color: $darkgreyish;
+  &:hover {
+    color: $lightgreyish;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .slider__provider {
+    width: 47vw;
+    margin-top: 0;
+    margin: auto;
+  }
+  .slider-item__text {
+    font-size: 14px;
+    margin: 0;
+  }
+  .slider__arrow {
+    margin-bottom: 2vh;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .slider__provider {
+    width: 55vw;
+  }
+  .slider__arrows {
+    margin: -1vh 0 2vh;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .slider__provider {
+    width: 70vw;
+  }
+  .slider-item__title {
+    font-size: 4.5vw;
+    margin: 1vw 0;
+  }
+  .slider__arrow {
+    font-size: 33px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .horizontalSlider___281Ls {
+    height: 150px;
+  }
+  .slider__arrows {
+    margin: -1vh -5vw 3vh;
+  }
+}
