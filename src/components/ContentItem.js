@@ -12,7 +12,7 @@ const ContentItem = ({
   number,
   id,
 }) => {
-  const unRoll = (e) => {
+  const unRoll = () => {
     if (!isVisible) {
       setVisible(true);
     }

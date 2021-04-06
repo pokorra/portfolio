@@ -9,7 +9,7 @@ const Content3 = ({ isVisible, setVisible, setDetailContent }) => {
         text="conversationals api"
         color="#38b6ff"
         width="57%"
-        font="white"
+        font="#fff"
         setVisible={setVisible}
         isVisible={isVisible}
         setDetailContent={setDetailContent}
@@ -20,7 +20,7 @@ const Content3 = ({ isVisible, setVisible, setDetailContent }) => {
         text="animal collective"
         color="#ffde59"
         width="42%"
-        font="black"
+        font="#000"
         setVisible={setVisible}
         isVisible={isVisible}
         setDetailContent={setDetailContent}
@@ -30,8 +30,8 @@ const Content3 = ({ isVisible, setVisible, setDetailContent }) => {
       <ContentItem
         text="question game"
         color="#545454"
-        width="40%"
-        font="white"
+        width="47%"
+        font="#fff"
         setVisible={setVisible}
         isVisible={isVisible}
         setDetailContent={setDetailContent}
@@ -40,26 +40,26 @@ const Content3 = ({ isVisible, setVisible, setDetailContent }) => {
       />
       <ContentItem
         text="book quiz"
-        color="#ccccce"
-        width="28%"
-        font="black"
+        color="#ff5757"
+        width="52%"
+        font="#fff"
         setVisible={setVisible}
         isVisible={isVisible}
         setDetailContent={setDetailContent}
         number="3"
         id={id}
       />
-      <ContentItem
+      {/* <ContentItem
         text="best shop"
         color="#ff5757"
         width="30%"
-        font="white"
+        font="#fff"
         setVisible={setVisible}
         isVisible={isVisible}
         setDetailContent={setDetailContent}
         number="4"
         id={id}
-      />
+      /> */}
     </div>
   );
 };

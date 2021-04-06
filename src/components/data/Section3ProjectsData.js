@@ -1,5 +1,4 @@
 import quiz from "./quiz.png";
-import bestShop from "./bestShop.png";
 import emi from './emi.png';
 import acollective from "./acollective.png";
 import conversationals from "./conversationals.png";
@@ -8,10 +7,10 @@ const projects = [
   {
     name: "Conversationals",
     desc:
-      "Conversationals It is exclusively Polish-language project, created to give people with low communication skills a hand. This project logic has been written in vanilla JS, with no frameworks. Although, I made a shy attempt to use one JS library: a Gsap. JSON-tree has been stored online. To code layout I did use SCSS features and then processed it with Gulp.js.",
-    tech: ["Vanilla JS", "SCSS", "Gsap"],
-    code: "https://github.com/pokorra/conversationals",
-    view: "https://pokorra.github.io/conversationals",
+      "Conversationals is exclusively Polish-language project, created to give people with low communication skills a hand. This project logic has been written in vanilla JS, with no frameworks. Although, for page intro I used a Gsap library. JSON-tree has been stored online. To code layout I did use SCSS features and then processed it with Gulp.js.",
+    tech: ["Vanilla JS", "SCSS", "Gsap", "Gulp"],
+    code: "https://github.com/pokorra/conversationals-api",
+    view: "https://pokorra.github.io/conversationals-api",
     photo: conversationals,
   },
   {
@@ -41,15 +40,6 @@ const projects = [
     code: "https://github.com/pokorra/emi-promo",
     view: "https://pokorra.github.io/emi-promo/",
     photo: emi,
-  },
-  {
-    name: "Best Shop",
-    desc:
-      "At the beginning there were only pure HTML and CSS, but after that I have decided to make it mobile responsive, so with the Gulp preprocessor I changed CSS over to SCSS and added few lines in JS to make it mobile friendly.",
-    tech: ["SCSS", "Gulp", "RWD", "HTML"],
-    code: "https://github.com/pokorra/best-shop",
-    view: "https://pokorra.github.io/best-shop/",
-    photo: bestShop,
   },
 ];
 

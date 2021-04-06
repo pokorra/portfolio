@@ -28,6 +28,9 @@
   min-width: 120px;
   padding: 5px;
   margin: 10px;
+  &img {
+    height: 100%;
+  }
 }
 .technologies__list-item-name {
   bottom: 20px;

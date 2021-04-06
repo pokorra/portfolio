@@ -9,7 +9,7 @@ const Content2 = ({ isVisible, setVisible, setDetailContent }) => {
         text="technologies I worked with"
         color="#3c5947"
         width="60%"
-        font="white"
+        font="#fff"
         setVisible={setVisible}
         isVisible={isVisible}
         setDetailContent={setDetailContent}
@@ -20,7 +20,7 @@ const Content2 = ({ isVisible, setVisible, setDetailContent }) => {
         text="soft skills packet"
         color="#545454"
         width="39%"
-        font="white"
+        font="#fff"
         setVisible={setVisible}
         isVisible={isVisible}
         setDetailContent={setDetailContent}

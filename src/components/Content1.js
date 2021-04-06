@@ -10,7 +10,7 @@ const Content1 = ({ isVisible, setVisible, setDetailContent }) => {
         text="who am I"
         color="#ff5757"
         width="54%"
-        font="white"
+        font="#fff"
         setVisible={setVisible}
         isVisible={isVisible}
         setDetailContent={setDetailContent}
@@ -21,7 +21,7 @@ const Content1 = ({ isVisible, setVisible, setDetailContent }) => {
         text="my work experiences"
         color="#ccccce"
         width="45%"
-        font="black"
+        font="#000"
         setVisible={setVisible}
         isVisible={isVisible}
         setDetailContent={setDetailContent}
