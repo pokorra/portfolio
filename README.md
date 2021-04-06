@@ -1,6 +1,6 @@
 # Portfile - my online portfolio
 
-> Portfile is basically the name of my online portfolio, which has been displayed online here: [My portfolio](https://pokorra.github.io/portfile/)
+> Portfile is basically the name of my online portfolio, which has been displayed online here: [My portfolio](https://pokorra.github.io/portfolio/)
 
 ## Table of contents
 
@@ -15,7 +15,9 @@ Hi, my name is Patrycja Pokora and I have created this project as an alternative
 
 ## Screenshot
 
-![portfolio preview](./portfolioPNG.png)
+![intro preview](./portfolio_intro.png)
+
+![portfolio preview](./portfolio.png)
 
 ## Technologies
 
@@ -31,6 +33,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 I wanted this project to look kind of old school, but not the kitschy way. To achieve that, I tried to made it look a little like a poster from 80's.
 I was naming SCSS classes according to BEM methodology, although I have decided to organize my files equivalently of the React component files. I felt like this approach will make my code more transparent.
+
+### gsap
+
+I have decided to create a website-intro with gsap. It's an animated svg file with colors matching with the main website.
 
 ## Status
 

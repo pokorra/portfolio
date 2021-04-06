@@ -16,7 +16,7 @@ const projects = [
   {
     name: "Animal Collective",
     desc:
-      "Layout of fictional organization made in pure JS and CSS. I focused on CSS variables, pseudo elements and simple animations that made this page fully responsive and pleasant to look at.",
+      "Layout of fictional organization made in pure JS and CSS. I focused on CSS variables, pseudo elements and simple animations that made this page fully responsive and pleasant to look at. Also, for the first time I added a dark mode to my website, so I am kinda proud of myself;)",
     tech: ["JavaScript", "CSS"],
     code: "https://github.com/pokorra/animals-portfolio",
     view: "https://pokorra.github.io/animals-portfolio",
@@ -26,7 +26,7 @@ const projects = [
   {
     name: "Question Game ReactJS",
     desc:
-      "My very first unaided React project. This is where I learned a lot about passing props down, also I learned how to use react hooks etc., but the most important for me was learning how to design a simple application.",
+      "My very first unaided React project basically based on form validation. This is where I learned a lot about passing props down, also I learned how to use react hooks etc., but the most important for me was learning how to design an application.",
     tech: ["React", "SCSS"],
     code: "https://github.com/pokorra/quiz-game",
     view: "https://pokorra.github.io/quiz-game/",
