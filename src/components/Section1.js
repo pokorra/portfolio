@@ -4,7 +4,7 @@ import Content1 from "./Content1";
 import Detail1 from "./Detail1";
 
 const Section1 = () => {
-  const [isVisible, setVisible] = useState(false);
+  const [isVisible, setVisible] = useState(0);
   const [btn, setBtn] = useState(false);
   const [detailContent, setDetailContent] = useState(0);
 

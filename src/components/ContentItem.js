@@ -13,8 +13,9 @@ const ContentItem = ({
   id,
 }) => {
   const unRoll = () => {
-    if (!isVisible) {
-      setVisible(true);
+    if (isVisible !== 1) {
+      setVisible(1);
+      console.log(isVisible)
     }
     setDetailContent(number);
   };

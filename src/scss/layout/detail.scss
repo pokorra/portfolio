@@ -1,39 +1,30 @@
+
 .detail {
-  display: none;
-  margin-bottom: 15px;
   border-radius: 0 0 20px 20px;
   background-color: $whitesmoke;
   color: $black;
   max-height: 0;
-}
-.detail--roll {
-  display: flex;
-  animation: shrink 0.5s linear forwards;
-}
-.detail--unroll {
   margin-top: 0px;
   @include centerflex;
   flex-direction: column;
   animation-delay: 1s;
-  animation: 0.5s grow linear forwards;
-  max-height: 0;
+  transition: .2s;
 }
 
 .detail__inner {
-  visibility: visible;
-  opacity: 0;
-  animation: showme 1s forwards;
-}
-.detail__inner--invisible {
   visibility: hidden;
+  opacity: 0;
+  @include centerflex;
+  flex-direction: column;
 }
+
 .detail__closing-btn {
   margin: 3px;
   padding: 5px;
   font-size: 20px;
   background-color: $black;
   color: $whitesmoke;
-  display: inherit;
+  display: inline-block;
   cursor: pointer;
   svg {
     margin-right: 10px;

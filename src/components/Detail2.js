@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import RollButton from "./RollButton";
 import skills from "./data/section2data";
+import gsap from "gsap";
 import {
   CarouselProvider,
   Slider,
@@ -18,22 +19,42 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const Detail2 = ({ isVisible, setVisible, detailContent }) => {
+  const content2 = useRef(null);
   const roll = () => {
-    setVisible(false);
+    setVisible(2);
   };
+
+  useEffect(() => {
+    const container = content2.current;
+    const inner = content2.current.firstChild;
+    if (isVisible === 1) {
+      const tl = gsap.timeline();
+      tl.to(container, { duration: 0.1, marginBottom: "15px" })
+        .to(container, {
+          duration: 0.5,
+          maxHeight: `${container.scrollHeight * 2}px`,
+        })
+        .to(inner, { duration: 0.5, autoAlpha: 1 });
+    } else if (isVisible === 2) {
+      const tl = gsap.timeline();
+      tl.fromTo(inner, { autoAlpha: 1 }, { duration: 0.5, autoAlpha: 0 })
+        .to(container, { duration: 0.5, maxHeight: "0px" })
+        .fromTo(
+          container,
+          { marginBottom: "15px" },
+          { duration: 0.1, marginBottom: "0px" }
+        );
+    }
+  }, [isVisible, detailContent]);
 
   const i = detailContent;
   const skill = skills[i];
   const skillList = skill.list;
 
   return (
-    <div className={`detail ${isVisible ? "detail--unroll" : ""}`}>
-      <RollButton roll={roll} />
-      <div
-        className={`${
-          isVisible ? "detail__inner" : "detail__inner--invisible"
-        } ${skill.class}`}
-      >
+    <div className="detail" ref={content2}>
+      <div className={`detail__inner ${skill.class}`}>
+        <RollButton roll={roll} />
         <h3 className="detail2__title">{skill.title}</h3>
         {skill.class === "technologies" ? (
           <ul className="technologies__list">
