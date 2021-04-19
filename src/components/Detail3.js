@@ -12,6 +12,7 @@ const Detail3 = ({ isVisible, setVisible, detailContent }) => {
   useEffect(() => {
     const container = content3.current;
     const inner = content3.current.firstChild;
+    console.log(container.scrollHeight + " scroll, " + container.offsetHeight + " offset");
     if (isVisible === 1) {
       const tl = gsap.timeline();
       tl.to(container, { duration: 0.1, marginBottom: "15px" })
