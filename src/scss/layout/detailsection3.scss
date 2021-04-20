@@ -1,12 +1,13 @@
 .project {
   display: flex;
   width: 90%;
-  margin: 20px auto;
+  margin: 0 auto;
   align-items: center;
 }
 .project__img-container {
   width: 45%;
   height: 100%;
+  margin: 10px auto;
   background-color: rgba(0, 0, 0, 0.2);
 }
 .project__img {

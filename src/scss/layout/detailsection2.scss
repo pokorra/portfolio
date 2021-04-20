@@ -31,7 +31,6 @@
   margin: 10px;
   & img {
     height: 100%;
-    //why o why
   }
 }
 .technologies__list-item-name {
@@ -41,20 +40,15 @@
   word-wrap: wrap;
 }
 
+
 @media only screen and (max-width: 650px) {
   .technologies__list-item {
-    min-width: 110px;
-    margin: 5px;
-  }
-  .technologies__list-item-name {
-    font-size: 15px;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  .technologies__list-item {
-    min-width: 100px;
+    max-width: 80px;
     margin: 0px;
+    & img {
+      width: 80px;
+      height: auto;
+    }
   }
   .technologies__list-item-name {
     font-size: 14px;
@@ -136,6 +130,7 @@
     font-size: 4.5vw;
     margin: 1vw 0;
   }
+ 
   .slider__arrow {
     font-size: 33px;
   }
@@ -144,6 +139,9 @@
 @media only screen and (max-width: 400px) {
   .horizontalSlider___281Ls {
     height: 150px;
+  }
+  .slider-item__text {
+    font-size: 12px;
   }
   .slider__arrows {
     margin: -1vh -5vw 3vh;

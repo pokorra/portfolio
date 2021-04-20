@@ -14,11 +14,10 @@ const Opener = () => {
     const floor = elements.getElementById("floor");
     const girl = elements.getElementById("girl");
 
-    gsap.set(floor, { transformOrigin: "50% 0%" });
-
+    gsap.set(floor, { transformOrigin: "50% 0%", scale: 0 });
     const tl = gsap.timeline({ defaults: { ease: "none" } });
     tl.fromTo(sunset, { y: "+=100%" }, { duration: 1, y: "-=100%", opacity: 1 })
-      .fromTo(floor, { scale: 0, opacity: 1 }, { duration: 1, scale: 1 })
+      .fromTo(floor, { scale: 0, opacity: 0}, { duration: 1, scale: 1, opacity: 1})
       .to(girl, { duration: 1, opacity: 1 }, "=0.7")
       .fromTo(
         btn,

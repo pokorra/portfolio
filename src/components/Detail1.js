@@ -14,17 +14,16 @@ const Detail1 = ({ isVisible, setVisible, detailContent }) => {
     const container = content1.current;
     const inner = content1.current.firstChild;
     if (isVisible === 1) {
-      console.log(container.scrollHeight + " scroll, " + container.offsetHeight + " offset");
       const tl = gsap.timeline();
       tl.to(container, { duration: 0.1, marginBottom: "15px" })
         .to(container, {
           duration: 0.5,
-          maxHeight: `${container.scrollHeight * 2}px`,
+          maxHeight: `${container.scrollHeight * 2.5}px`,
         })
         .to(inner, { duration: 0.5, autoAlpha: 1 });
     } else if (isVisible === 2) {
       const tl = gsap.timeline();
-      tl.fromTo(inner, { autoAlpha: 1 }, { duration: 0.5, autoAlpha: 0 })
+      tl.fromTo(inner, { autoAlpha: 1 }, { duration: 0.3, autoAlpha: 0 })
         .to(container, { duration: 0.5, maxHeight: "0px" })
         .fromTo(
           container,

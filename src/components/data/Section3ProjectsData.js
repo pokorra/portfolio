@@ -16,7 +16,7 @@ const projects = [
   {
     name: "Animal Collective",
     desc:
-      "Layout of fictional organization made in pure JS and CSS. I focused on CSS variables, pseudo elements and simple animations that made this page fully responsive and pleasant to look at. Also, for the first time I added a dark mode to my website, so I am kinda proud of myself;)",
+      "Layout of the fictional organization made in pure JS and CSS. I focused on CSS variables, pseudo elements and simple animations that made this page fully responsive and pleasant to look at. Also, for the first time I added a dark mode to my website, so I was quite pleased with myself",
     tech: ["JavaScript", "CSS"],
     code: "https://github.com/pokorra/animals-portfolio",
     view: "https://pokorra.github.io/animals-portfolio",

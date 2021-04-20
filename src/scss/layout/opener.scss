@@ -11,7 +11,6 @@
 }
 
 .opener-roll {
-  // transform: rotateY(90deg);
   animation: roll-out 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards;
 }
 
@@ -29,10 +28,6 @@
   animation: blinking 5s infinite;
   transform-origin: top;
   animation-delay: 9s;
-}
-
-#sunset {
-  animation-delay: 1.3s;
 }
 
 .opener__btn {
@@ -79,5 +74,20 @@
   100% {
     transform: rotateY(90deg);
     display: none;
+  }
+}
+
+
+@media only screen and (min-width: 1650px) {
+  .opener__btn {
+    font-size: 35px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .opener__btn {
+    top: 55vh;
+    right: 15vw;
+    padding: 1.5vh;
   }
 }
