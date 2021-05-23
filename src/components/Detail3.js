@@ -1,36 +1,15 @@
 import React , { useEffect, useRef } from "react";
 import RollButton from "./RollButton";
 import projects from "./data/Section3ProjectsData";
-import gsap from "gsap";
+import AnimationFunc from '../functions/animationFunc';
+import roll from '../functions/roll';
 
 const Detail3 = ({ isVisible, setVisible, detailContent }) => {
   const content3 = useRef(null);
-  const roll = () => {
-    setVisible(2);
-  };
-
   useEffect(() => {
-    const container = content3.current;
-    const inner = content3.current.firstChild;
-    if (isVisible === 1) {
-      const tl = gsap.timeline();
-      tl.to(container, { duration: 0.1, marginBottom: "15px" })
-        .to(container, {
-          duration: 0.5,
-          maxHeight: `${container.scrollHeight * 2.5}px`,
-        })
-        .to(inner, { duration: 0.5, autoAlpha: 1 });
-    } else if (isVisible === 2) {
-      const tl = gsap.timeline();
-      tl.fromTo(inner, { autoAlpha: 1 }, { duration: 0.3, autoAlpha: 0 })
-        .to(container, { duration: 0.5, maxHeight: "0px" })
-        .fromTo(
-          container,
-          { marginBottom: "15px" },
-          { duration: 0.1, marginBottom: "0px" }
-        );
-    }
+    AnimationFunc(isVisible, content3.current, content3.current.firstChild);
   }, [isVisible, detailContent]);
+
   const i = detailContent;
   const data = projects[i];
 
@@ -40,7 +19,7 @@ const Detail3 = ({ isVisible, setVisible, detailContent }) => {
       <div
         className={"project detail__inner"}
       >
-        <RollButton roll={roll} />
+        <RollButton roll={()=> {roll(setVisible)}} />
         <div className="project__img-container">
           <a href={data.view} target="_blank" rel="noopener noreferrer">
             <img

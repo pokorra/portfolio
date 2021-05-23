@@ -1,36 +1,14 @@
 import React, { useEffect, useRef } from "react";
 import RollButton from "./RollButton";
 import aboutPP from "./data/section1data";
-import gsap from "gsap";
+import AnimationFunc from '../functions/animationFunc';
+import roll from '../functions/roll';
 
 const Detail1 = ({ isVisible, setVisible, detailContent }) => {
   const content1 = useRef(null);
 
-  const roll = () => {
-    setVisible(2);
-  };
-
   useEffect(() => {
-    const container = content1.current;
-    const inner = content1.current.firstChild;
-    if (isVisible === 1) {
-      const tl = gsap.timeline();
-      tl.to(container, { duration: 0.1, marginBottom: "15px" })
-        .to(container, {
-          duration: 0.5,
-          maxHeight: `${container.scrollHeight * 2.5}px`,
-        })
-        .to(inner, { duration: 0.5, autoAlpha: 1 });
-    } else if (isVisible === 2) {
-      const tl = gsap.timeline();
-      tl.fromTo(inner, { autoAlpha: 1 }, { duration: 0.3, autoAlpha: 0 })
-        .to(container, { duration: 0.5, maxHeight: "0px" })
-        .fromTo(
-          container,
-          { marginBottom: "15px" },
-          { duration: 0.1, marginBottom: "0px" }
-        );
-    }
+    AnimationFunc(isVisible, content1.current, content1.current.firstChild);
   }, [isVisible, detailContent]);
 
   const i = detailContent;
@@ -39,7 +17,7 @@ const Detail1 = ({ isVisible, setVisible, detailContent }) => {
   return (
     <div ref={content1} className="detail">
       <div className="detail__inner">
-        <RollButton roll={() => roll()} />
+        <RollButton roll={()=> {roll(setVisible)}} />
         {data.name === "about" ? (
           <div className="person">
             <div className="person__img">
