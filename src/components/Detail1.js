@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import RollButton from "./RollButton";
-import aboutPP from "./data/section1data";
+import sectionFirstData from "../data/sectionFirstData";
 import AnimationFunc from '../functions/animationFunc';
 import roll from '../functions/roll';
 
@@ -11,8 +11,7 @@ const Detail1 = ({ isVisible, setVisible, detailContent }) => {
     AnimationFunc(isVisible, content1.current, content1.current.firstChild);
   }, [isVisible, detailContent]);
 
-  const i = detailContent;
-  const data = aboutPP[i];
+  const data = sectionFirstData[detailContent];
 
   return (
     <div ref={content1} className="detail">
@@ -44,7 +43,6 @@ const Detail1 = ({ isVisible, setVisible, detailContent }) => {
             </ul>
             <div className="works__git">
               <a href={data.gitadd} target="_blank" rel="noopener noreferrer">
-                {" "}
                 <div className="works__git-pic"></div>
               </a>
               <p className="works__git-data"> {data.git}</p>

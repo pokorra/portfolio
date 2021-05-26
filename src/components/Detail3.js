@@ -1,6 +1,6 @@
 import React , { useEffect, useRef } from "react";
 import RollButton from "./RollButton";
-import projects from "./data/Section3ProjectsData";
+import sectionThirdData from "../data/sectionThirdData";
 import AnimationFunc from '../functions/animationFunc';
 import roll from '../functions/roll';
 
@@ -11,11 +11,10 @@ const Detail3 = ({ isVisible, setVisible, detailContent }) => {
   }, [isVisible, detailContent]);
 
   const i = detailContent;
-  const data = projects[i];
+  const data = sectionThirdData[i];
 
   return (
     <div className="detail" ref={content3}>
-      
       <div
         className={"project detail__inner"}
       >
@@ -35,8 +34,7 @@ const Detail3 = ({ isVisible, setVisible, detailContent }) => {
           <ul className="project__list">
             {data.tech.map((item) => (
               <li className="project__list-item" key={item}>
-                {" "}
-                {item}{" "}
+                {item}
               </li>
             ))}
           </ul>
@@ -46,8 +44,7 @@ const Detail3 = ({ isVisible, setVisible, detailContent }) => {
               href={data.view}
               target="_blank"
               rel="noopener noreferrer"
-              className="project__link"
-            >
+              className="project__link">
               {" "}
               here
             </a>
@@ -60,7 +57,7 @@ const Detail3 = ({ isVisible, setVisible, detailContent }) => {
             >
               there
             </a>
-            .{" "}
+            .
           </p>
         </div>
       </div>

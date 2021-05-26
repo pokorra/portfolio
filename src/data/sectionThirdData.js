@@ -1,9 +1,9 @@
-import quiz from "./quiz.png";
-import emi from './emi.png';
-import acollective from "./acollective.png";
-import conversationals from "./conversationals.png";
+import quiz from "../images/quiz.png";
+import emi from '../images/emi.png';
+import acollective from "../images/acollective.png";
+import conversationals from "../images/conversationals.png";
 
-const projects = [
+const sectionThirdData = [
   {
     name: "Conversationals",
     desc:
@@ -43,4 +43,4 @@ const projects = [
   },
 ];
 
-export default projects;
+export default sectionThirdData;

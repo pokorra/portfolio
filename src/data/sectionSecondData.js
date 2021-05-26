@@ -1,16 +1,16 @@
-import bootstrap from "./bootstrap.png";
-import git from "./git.png";
-import gulp from "./gulp.png";
-import html from "./html.png";
-import javascript from "./javascript.png";
-import npm from "./npm.png";
-import react from "./react.png";
-import sass from "./sass.png";
-import css from "./css.png";
-import gsap from "./gsap.png";
+import bootstrap from "../images/bootstrap.png";
+import git from "../images/git.png";
+import gulp from "../images/gulp.png";
+import html from "../images/html.png";
+import javascript from "../images/javascript.png";
+import npm from "../images/npm.png";
+import react from "../images/react.png";
+import sass from "../images/sass.png";
+import css from "../images/css.png";
+import gsap from "../images/gsap.png";
 
 
-const skills = [
+const sectionSecondData = [
   {
     title: "Technologies and tools I am familiar with:",
     list: [
@@ -60,4 +60,4 @@ const skills = [
   },
 ];
 
-export default skills;
+export default sectionSecondData;
